@@ -1,0 +1,21 @@
+Executable : /home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/home/arl_day/Documents/Flutter/object_detection_flutter/android
+-DCMAKE_FIND_ROOT_PATH=/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/prefab/arm64-v8a/prefab
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_TOOLCHAIN_FILE=/home/arl_day/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DANDROID_ABI=arm64-v8a
+-DANDROID_NDK=/home/arl_day/Android/Sdk/ndk-bundle
+-DANDROID_PLATFORM=android-21
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_ANDROID_NDK=/home/arl_day/Android/Sdk/ndk-bundle
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/arl_day/Documents/Flutter/object_detection_flutter/build/app/intermediates/cmake/debug/obj/arm64-v8a
+-DCMAKE_MAKE_PROGRAM=/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=21
+-B/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/arm64-v8a
+-GNinja
+jvmArgs : 
+
+Build command args:

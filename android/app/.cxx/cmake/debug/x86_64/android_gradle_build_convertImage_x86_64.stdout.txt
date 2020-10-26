@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64'
+ninja: no work to do.

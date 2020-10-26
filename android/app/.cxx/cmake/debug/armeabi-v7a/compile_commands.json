@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/arl_day/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/arl_day/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/arl_day/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DconvertImage_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/convertImage.dir/home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c.o   -c /home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c",
+  "file": "/home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c"
+}
+]

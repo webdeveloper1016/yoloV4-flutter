@@ -6,6 +6,8 @@ https://github.com/TexMexMax/tflite_flutter_helper/blob/master/lib/src/image/ima
 
 If you want to add your own model, remember to add the model and label file to the assets folder, and make the neccessary changes in classifierYolov4.dart (simply change the variables MODEL_FILE_NAME and LABEL_FILE_NAME).
 
+In addition, using this article (https://medium.com/@hugand/capture-photos-from-camera-using-image-stream-with-flutter-e9af94bc2bee), I was able to make the conversion of the camera from YUV420 to RBG much faster incorporating C code.
+
 Object Detection app built using [TFLite Flutter Plugin](https://github.com/am15h/tflite_flutter_plugin)
 and [TFLite Flutter Helper Library](https://github.com/am15h/tflite_flutter_helper)
 

@@ -1,39 +1,39 @@
 {
   "stringTable": {
-    "0": "/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64",
-    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/home/arl_day/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/arl_day/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DconvertImage_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+    "0": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DconvertImage_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
   },
   "buildFiles": [
-    "/home/arl_day/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake",
-    "/home/arl_day/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-    "/home/arl_day/Documents/Flutter/object_detection_flutter/android/CMakeLists.txt"
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" clean"
+    "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" clean"
   ],
-  "buildTargetsCommand": "/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "convertImage-Debug-x86_64": {
-      "buildCommand": "/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" convertImage",
+      "buildCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" convertImage",
       "buildType": "debug",
-      "toolchain": "3920681363",
+      "toolchain": "1817412942",
       "abi": "x86_64",
       "artifactName": "convertImage",
       "files": [
         {
-          "src": "/home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c",
+          "src": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/ios/Classes/converter.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "/home/arl_day/Documents/Flutter/object_detection_flutter/build/app/intermediates/cmake/debug/obj/x86_64/libconvertImage.so",
+      "output": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/build/app/intermediates/cmake/debug/obj/x86_64/libconvertImage.so",
       "runtimeFiles": []
     }
   },
   "toolchains": {
-    "3920681363": {
-      "cCompilerExecutable": "/home/arl_day/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang"
+    "1817412942": {
+      "cCompilerExecutable": "/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang"
     }
   },
   "cFileExtensions": [

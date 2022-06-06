@@ -1,14 +1,14 @@
 import 'dart:ffi';
+import 'package:ffi/ffi.dart' as ffi;
 import 'dart:io';
 import 'dart:isolate';
 import 'dart:typed_data';
-import 'package:ffi/ffi.dart';
 import 'package:camera/camera.dart';
 import 'package:image/image.dart' as imageLib;
 import 'package:object_detection/tflite/classifierYolov4.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 
-typedef convert_func = Pointer<Uint32> Function(
+typedef ConvertFunc = Pointer<Uint32> Function(
     Pointer<Uint8>, Pointer<Uint8>, Pointer<Uint8>, Int32, Int32, Int32, Int32);
 typedef Convert = Pointer<Uint32> Function(
     Pointer<Uint8>, Pointer<Uint8>, Pointer<Uint8>, int, int, int, int);
@@ -41,7 +41,7 @@ class IsolateUtils {
         : DynamicLibrary.process();
     // Load the convertImage() function from the library
     Convert conv = convertImageLib
-        .lookup<NativeFunction<convert_func>>('convertImage')
+        .lookup<NativeFunction<ConvertFunc>>('convertImage')
         .asFunction<Convert>();
     sendPort.send(port.sendPort);
 
@@ -56,12 +56,12 @@ class IsolateUtils {
         imageLib.Image image;
         if (Platform.isAndroid) {
           // Allocate memory for the 3 planes of the image
-          Pointer<Uint8> p =
-              allocate(count: isolateData.cameraImage.planes[0].bytes.length);
-          Pointer<Uint8> p1 =
-              allocate(count: isolateData.cameraImage.planes[1].bytes.length);
-          Pointer<Uint8> p2 =
-              allocate(count: isolateData.cameraImage.planes[2].bytes.length);
+          Pointer<Uint8> p = ffi.calloc
+              .allocate(isolateData.cameraImage.planes[0].bytes.length);
+          Pointer<Uint8> p1 = ffi.calloc
+              .allocate(isolateData.cameraImage.planes[1].bytes.length);
+          Pointer<Uint8> p2 = ffi.calloc
+              .allocate(isolateData.cameraImage.planes[2].bytes.length);
 
           // Assign the planes data to the pointers of the image
           Uint8List pointerList =
@@ -103,10 +103,10 @@ class IsolateUtils {
 
           // Free the memory space allocated
           // from the planes and the converted data
-          free(p);
-          free(p1);
-          free(p2);
-          free(imgP);
+          ffi.calloc.free(p);
+          ffi.calloc.free(p1);
+          ffi.calloc.free(p2);
+          ffi.calloc.free(imgP);
         } else if (Platform.isIOS) {
           image = imageLib.Image.fromBytes(
             isolateData.cameraImage.planes[0].bytesPerRow,

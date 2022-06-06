@@ -1,19 +1,19 @@
 {
   "buildFiles": [
-    "/home/arl_day/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake",
-    "/home/arl_day/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-    "/home/arl_day/Documents/Flutter/object_detection_flutter/android/CMakeLists.txt"
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" clean"
+    "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" clean"
   ],
-  "buildTargetsCommand": "/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "convertImage-Debug-x86_64": {
       "artifactName": "convertImage",
-      "buildCommand": "/home/arl_day/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/arl_day/Documents/Flutter/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" convertImage",
+      "buildCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/debug/x86_64\" convertImage",
       "abi": "x86_64",
-      "output": "/home/arl_day/Documents/Flutter/object_detection_flutter/build/app/intermediates/cmake/debug/obj/x86_64/libconvertImage.so",
+      "output": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/build/app/intermediates/cmake/debug/obj/x86_64/libconvertImage.so",
       "runtimeFiles": []
     }
   }

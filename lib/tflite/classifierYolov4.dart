@@ -125,7 +125,7 @@ class Classifier {
   List<Recognition> nms(
       List<Recognition> list) // Turned from Java's ArrayList to Dart's List.
   {
-    List<Recognition> nmsList = new List<Recognition>();
+    List<Recognition> nmsList = [];
 
     for (int k = 0; k < _labels.length; k++) {
       // 1.find max confidence per class

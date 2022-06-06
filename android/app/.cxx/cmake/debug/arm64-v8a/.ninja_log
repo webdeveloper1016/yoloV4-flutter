@@ -1,7 +1,3 @@
 # ninja log v5
-0	27	1603688163	CMakeFiles/convertImage.dir/home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c.o	6d589fe74ae11d53
-28	42	1603688163	/home/arl_day/Documents/Flutter/object_detection_flutter/build/app/intermediates/cmake/debug/obj/arm64-v8a/libconvertImage.so	3bd1ba7eecb0101
-0	29	1603689713	CMakeFiles/convertImage.dir/home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c.o	6d589fe74ae11d53
-29	44	1603689713	/home/arl_day/Documents/Flutter/object_detection_flutter/build/app/intermediates/cmake/debug/obj/arm64-v8a/libconvertImage.so	3bd1ba7eecb0101
-0	30	1603690219	CMakeFiles/convertImage.dir/home/arl_day/Documents/Flutter/object_detection_flutter/ios/Classes/converter.c.o	6d589fe74ae11d53
-30	44	1603690219	/home/arl_day/Documents/Flutter/object_detection_flutter/build/app/intermediates/cmake/debug/obj/arm64-v8a/libconvertImage.so	3bd1ba7eecb0101
+0	71	1654529343	CMakeFiles/convertImage.dir/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/ios/Classes/converter.c.o	be9be19414b03f6e
+71	105	1654529343	/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/build/app/intermediates/cmake/debug/obj/arm64-v8a/libconvertImage.so	36acead22403d1ee

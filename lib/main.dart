@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:object_detection/ui/home_view.dart';
+import 'package:get/get.dart';
+import 'package:object_detection/ui/pages/home.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() async {
@@ -14,15 +15,29 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  final Map<int, Color> color = {
+    50: Color.fromRGBO(255, 255, 255, .1),
+    100: Color.fromRGBO(255, 255, 255, .2),
+    200: Color.fromRGBO(255, 255, 255, .3),
+    300: Color.fromRGBO(255, 255, 255, .4),
+    400: Color.fromRGBO(255, 255, 255, .5),
+    500: Color.fromRGBO(255, 255, 255, .6),
+    600: Color.fromRGBO(255, 255, 255, .7),
+    700: Color.fromRGBO(255, 255, 255, .8),
+    800: Color.fromRGBO(255, 255, 255, .9),
+    900: Color.fromRGBO(255, 255, 255, 1),
+  };
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Object Detection TFLite',
+    return GetMaterialApp(
+      title: 'Classificação de Rebit',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: MaterialColor(0xFFFFFFF, color),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeView(),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }

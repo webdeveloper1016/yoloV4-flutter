@@ -17,8 +17,8 @@ class BoxWidget extends StatelessWidget {
     return Positioned(
       left: result.renderLocation.left,
       top: result.renderLocation.top,
-      width: MediaQuery.of(context).size.width * 0.3,
-      height: MediaQuery.of(context).size.height * 0.3,
+      width: result.renderLocation.width,
+      height: result.renderLocation.height,
       child: Container(
         width: result.renderLocation.width,
         height: result.renderLocation.height,

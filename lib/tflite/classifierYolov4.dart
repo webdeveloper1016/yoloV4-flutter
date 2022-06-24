@@ -22,7 +22,7 @@ class Classifier {
   /// Labels file loaded as list
   List<String> _labels;
 
-  static const String MODEL_FILE_NAME = "yolov4-rebite-416.tflite";
+  static const String MODEL_FILE_NAME = "yolov4-rebite-fp16.tflite";
   static const String LABEL_FILE_NAME = "obj.txt";
 
   /// Input size of image (heixght = width = 300)

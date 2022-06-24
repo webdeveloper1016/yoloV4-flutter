@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "convertImage-Release-armeabi-v7a": {
+      "artifactName": "convertImage",
+      "buildCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/armeabi-v7a\" convertImage",
+      "abi": "armeabi-v7a",
+      "output": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/build/app/intermediates/cmake/release/obj/armeabi-v7a/libconvertImage.so",
+      "runtimeFiles": []
+    }
+  }
+}

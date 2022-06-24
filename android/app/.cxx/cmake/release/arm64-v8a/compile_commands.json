@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/arm64-v8a",
+  "command": "/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DconvertImage_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles/convertImage.dir/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/ios/Classes/converter.c.o   -c /home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/ios/Classes/converter.c",
+  "file": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/ios/Classes/converter.c"
+}
+]

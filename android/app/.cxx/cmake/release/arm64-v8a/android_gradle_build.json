@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DconvertImage_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/home/israel/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "convertImage-Release-arm64-v8a": {
+      "buildCommand": "/home/israel/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/android/app/.cxx/cmake/release/arm64-v8a\" convertImage",
+      "buildType": "release",
+      "toolchain": "1817412942",
+      "abi": "arm64-v8a",
+      "artifactName": "convertImage",
+      "files": [
+        {
+          "src": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/ios/Classes/converter.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/home/israel/Documents/0-yolo-last-example/yolov4/object_detection_flutter/build/app/intermediates/cmake/release/obj/arm64-v8a/libconvertImage.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "1817412942": {
+      "cCompilerExecutable": "/home/israel/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

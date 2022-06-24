@@ -30,12 +30,11 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 60.0, bottom: 20),
-              child: Image.asset(
-                "assets/embraer-logo.png",
-              ),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 30.0),
+            child: Image.asset(
+              "assets/embraer-logo.png",
+              height: 160,
             ),
           ),
           SizedBox(
@@ -142,24 +141,37 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      bottomNavigationBar: GestureDetector(
-        onTap: () {
-          Get.to(() => DetectorPage());
-        },
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-          decoration: BoxDecoration(
-            color: Color.fromARGB(255, 9, 13, 90),
-            borderRadius: BorderRadius.circular(6),
-          ),
-          height: 45,
-          alignment: Alignment.center,
-          child: Text(
-            "Começar a classificar",
-            style: TextStyle(color: Colors.white, fontSize: 16),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: Container(
+      margin: const EdgeInsets.only(bottom: 20),
+        child: FloatingActionButton(
+          backgroundColor: Color.fromARGB(255, 9, 13, 90),
+          onPressed: () => Get.to(() => DetectorPage()),
+          child: Icon(
+            Icons.camera,
+            color: Colors.white,
+            size: 44,
           ),
         ),
       ),
+      // bottomNavigationBar: GestureDetector(
+      //   onTap: () {
+      //     Get.to(() => DetectorPage());
+      //   },
+      //   child: Container(
+      //     margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+      //     decoration: BoxDecoration(
+      //       color: Color.fromARGB(255, 9, 13, 90),
+      //       borderRadius: BorderRadius.circular(6),
+      //     ),
+      //     height: 45,
+      //     alignment: Alignment.center,
+      //     child: Text(
+      //       "Começar a classificar",
+      //       style: TextStyle(color: Colors.white, fontSize: 16),
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

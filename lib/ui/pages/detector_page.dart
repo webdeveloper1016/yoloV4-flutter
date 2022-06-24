@@ -30,58 +30,37 @@ class _DetectorPageState extends State<DetectorPage> {
         backgroundColor: Colors.transparent,
       ),
       key: scaffoldKey,
-      body: Stack(
-        children: <Widget>[
-          // Camera View
-          CameraView(resultsCallback, statsCallback),
-          // Bounding boxes
-          boundingBoxes(results),
-
-          // Bottom Sheet
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: DraggableScrollableSheet(
-              initialChildSize: 0.28,
-              minChildSize: 0.2,
-              maxChildSize: 0.3,
-              builder: (_, ScrollController scrollController) => Container(
-                width: double.maxFinite,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BORDER_RADIUS_BOTTOM_SHEET,
-                ),
-                child: SingleChildScrollView(
-                  controller: scrollController,
-                  child: Center(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(Icons.keyboard_arrow_up,
-                            size: 48, color: Color.fromARGB(255, 30, 67, 136)),
-                        (stats != null)
-                            ? Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  children: [
-                                    StatsRow('Inference time:',
-                                        '${stats.inferenceTime} ms'),
-                                    StatsRow('Total prediction time:',
-                                        '${stats.totalElapsedTime} ms'),
-                                    StatsRow('Pre-processing time:',
-                                        '${stats.preProcessingTime} ms'),
-                                    StatsRow('Frame',
-                                        '${CameraViewSingleton.inputImageSize?.width} X ${CameraViewSingleton.inputImageSize?.height}'),
-                                  ],
-                                ),
-                              )
-                            : Container()
-                      ],
-                    ),
-                  ),
-                ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Stack(
+              children: [
+                CameraView(resultsCallback, statsCallback),
+                boundingBoxes(results),
+              ],
+            ),
+          ),
+          Container(
+            height: 140,
+            padding: const EdgeInsets.all(16),
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: stats == null ? [] : [
+                  StatsRow('Inference time:', '${stats.inferenceTime} ms'),
+                  StatsRow(
+                      'Total prediction time:', '${stats.totalElapsedTime} ms'),
+                  StatsRow(
+                      'Pre-processing time:', '${stats.preProcessingTime} ms'),
+                  StatsRow('Frame',
+                      '${CameraViewSingleton.inputImageSize?.width} X ${CameraViewSingleton.inputImageSize?.height}'),
+                ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -102,12 +102,11 @@ class _CameraViewState extends State<CameraView> with WidgetsBindingObserver {
       return Container();
     }
 
-    return CameraPreview(cameraController);
-  
-    //ignore: dead_code
-    return AspectRatio(
-      aspectRatio: cameraController.value.aspectRatio,
-      child: CameraPreview(cameraController),
+    return Container(
+      width: double.infinity,
+      child: CameraPreview(
+        cameraController,
+      ),
     );
   }
 
